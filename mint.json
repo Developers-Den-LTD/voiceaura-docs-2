@@ -1,21 +1,21 @@
 {
   "api": {
-    "baseUrl": "https://api.getmalakai.com/api/"
+    "baseUrl": "https://superadmin.voiceaura.ai/api/"
   },
   "$schema": "https://mintlify.com/schema.json",
-  "name": "malakai AI",
+  "name": "Voiceaure",
   "logo": {
-    "dark": "/favicon.svg",
-    "light": "/favicon.svg"
+    "dark": "voiceaura-logo.svg",
+    "light": "voiceaura-logo.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "favicon.svg",
   "colors": {
-    "primary": "#722ed1",
-    "light": "#722ed1",
-    "dark": "#722ed1",
+    "primary": "#E6AC00",
+    "light": "#E6AC00",
+    "dark": "#E6AC00",
     "anchors": {
-      "from": "#722ed1",
-      "to": "#722ed1"
+      "from": "#E6AC00",
+      "to": "#E6AC00"
     }
   },
   "topbarLinks": [
@@ -32,9 +32,46 @@
     {
       "name": "API reference",
       "url": "api-reference"
+    },
+    {
+      "name": "Documentation",
+      "url": "documentation"
     }
   ],
   "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "introduction",
+        "quickstart"
+       
+      ]
+    },
+    {
+      "group": "Voiceaure",
+      "pages": [
+        "enterprise/customTwilio",
+        "enterprise/customLLM",
+        "enterprise/customLanguage",
+        "enterprise/ownTwilio",
+        "enterprise/rateLimits"
+      ]
+    },
+    {
+      "group": "Basic Tutorials",
+      "pages": [
+        "basicTutorial/conversationalPathways",
+        "basicTutorial/customTools",
+        "basicTutorial/firstPhoneCall",
+        "basicTutorial/webhookSigning",
+        "basicTutorial/1000calls",
+        "basicTutorial/dynamicData",
+        "basicTutorial/maxDuration",
+        "basicTutorial/liveTransfer",
+        "basicTutorial/webhooks"
+      ]
+    },
+   
     {
       "group": "Basic",
       "pages": [
@@ -183,7 +220,6 @@
         "api-reference/batches/list",
         "api-reference/batches/detail",
         "api-reference/batches/retrieve"
-
       ]
     },
     {
@@ -197,7 +233,6 @@
         "api-reference/sms/messages",
         "api-reference/sms/replyMethod",
         "api-reference/sms/webhook"
-
       ]
     }
   ]
