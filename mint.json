@@ -3,12 +3,12 @@
     "baseUrl": "https://superadmin.voiceaura.ai/api/"
   },
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Voiceaure",
+  "name": "Voiceaura",
   "logo": {
-    "dark": "voiceaura-logo.svg",
-    "light": "voiceaura-logo.svg"
+    "dark": "/voiceaura-logo.svg",
+    "light": "/voiceaura-logo.svg"
   },
-  "favicon": "favicon.svg",
+  "favicon": "/voiceaura-logo.svg",
   "colors": {
     "primary": "#E6AC00",
     "light": "#E6AC00",
@@ -26,7 +26,7 @@
   ],
   "topbarCtaButton": {
     "name": "Get Started",
-    "url": "https://platform.getmalakai.com/"
+    "url": "http://app.voiceaura.ai/"
   },
   "tabs": [
     {
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "group": "Voiceaure",
+      "group": "Voiceaura",
       "pages": [
         "enterprise/customTwilio",
         "enterprise/customLLM",

@@ -2,11 +2,11 @@
 title: "Webhook Signing"
 ---
 
-malakai webhooks are signed with a secret key to ensure that they are not tampered with in transit and to confirm that they were sent by malakai.
+Voiceaura webhooks are signed with a secret key to ensure that they are not tampered with in transit and to confirm that they were sent by Voiceaura.
 
 ## Signing Webhooks
 
-When malakai sends a webhook, it calculates a signature using the HMAC algorithm with the SHA-256 hash function. The signature is then included in the `X-Webhook-Signature` header of the request
+When Voiceaura sends a webhook, it calculates a signature using the HMAC algorithm with the SHA-256 hash function. The signature is then included in the `X-Webhook-Signature` header of the request
 
 To create a webhook signing secret, first go to the [Account Settings in the Dev Portal](https://api.platform.com/portal/) and click on the “Keys” tab.
 
