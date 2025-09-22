@@ -69,7 +69,7 @@ description: Update your inbound agent’s settings, prompt and other details.
 ### Agent Parameters (Body)
 
 <ParamField body="voice" type="string">
-    Set your agent’s voice - all available voices can be found with the [List Voices](https://docs.malakai.ai/api-v1/get/voices) endpoint.
+    Set your agent’s voice - all available voices can be found with the [List Voices](http://docs.voiceaura.ai/api-v1/get/voices) endpoint.
 </ParamField>
 
 <ParamField body="background_track" type="string">
@@ -139,7 +139,7 @@ description: Update your inbound agent’s settings, prompt and other details.
 <ParamField body="tools" type="array" >
     Interact with the real world through API calls.
 
-    Detailed tutorial here: [Custom Tools](https://docs.malakai.ai/tutorials/custom-tools)
+    Detailed tutorial here: [Custom Tools](http://docs.voiceaura.ai/tutorials/custom-tools)
 </ParamField>
 
 <ParamField body="language" type="string" default="en-US" >
@@ -217,7 +217,7 @@ description: Update your inbound agent’s settings, prompt and other details.
 
     Set to ```null``` or an empty string to clear dynamic data settings.
 
-    Detailed usage in the [Send Call](https://docs.malakai.ai/api-v1/post/calls) endpoint.
+    Detailed usage in the [Send Call](http://docs.voiceaura.ai/api-v1/post/calls) endpoint.
 </ParamField>
 
 <ParamField body="interruption_threshold" type="number" default="100">
@@ -263,7 +263,7 @@ description: Update your inbound agent’s settings, prompt and other details.
 <ParamField body="webhook" type="string">
     When the call ends, we’ll send the call details in a POST request to the URL you specify here.
 
-    The request body will match the response from the [GET /v1/calls/:call_id](https://docs.malakai.ai/api-v1/get/calls-id) endpoint.
+    The request body will match the response from the [GET /v1/calls/:call_id](http://docs.voiceaura.ai/api-v1/get/calls-id) endpoint.
 </ParamField>
 
 <ParamField body="analysis_schema" type="object">

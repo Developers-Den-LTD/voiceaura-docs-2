@@ -83,7 +83,7 @@ description: Send an AI phone call with a custom objective and actions.
 </ParamField>
 
 <ParamField body="start_node_id" type="string">
-    This is the node ID for the node you want the pathway to start from. You can access the ID of your nodes [here](https://docs.malakai.ai/api-reference/pathways/get)
+    This is the node ID for the node you want the pathway to start from. You can access the ID of your nodes [here](http://docs.voiceaura.ai/api-reference/pathways/get)
 
     Note: This parameter is only used when ```pathway_id``` is provided.
 
@@ -344,7 +344,7 @@ description: Send an AI phone call with a custom objective and actions.
 <ParamField body="tools" type="array" >
     Interact with the real world through API calls.
 
-    Detailed tutorial here: [Custom Tools](https://docs.malakai.ai/tutorials/custom-tools)
+    Detailed tutorial here: [Custom Tools](http://docs.voiceaura.ai/tutorials/custom-tools)
 
 </ParamField>
 
@@ -428,7 +428,7 @@ description: Send an AI phone call with a custom objective and actions.
 
     The timezone is optional, and defaults to UTC if not specified.
 
-    Note: Scheduled calls can be cancelled with the [POST /v1/calls/:cal\l_id/stop](https://docs.malakai.ai/api-v1/post/calls-id-stop) endpoint.
+    Note: Scheduled calls can be cancelled with the [POST /v1/calls/:cal\l_id/stop](http://docs.voiceaura.ai/api-v1/post/calls-id-stop) endpoint.
 
 </ParamField>
 
@@ -509,7 +509,7 @@ description: Send an AI phone call with a custom objective and actions.
 <ParamField body="webhook" type="string" >
     When the call ends, we’ll send the call details in a POST request to the URL you specify here.
 
-    The request body will match the response from the [GET /v1/calls/:call_id](https://docs.malakai.ai/api-v1/get/calls-id) endpoint.
+    The request body will match the response from the [GET /v1/calls/:call_id](http://docs.voiceaura.ai/api-v1/get/calls-id) endpoint.
 
 </ParamField>
 
