@@ -17,15 +17,15 @@ Some examples of what Dynamic Data enables:
 <Accordion title="Expand to see an example in action">
     Here’s how to make an [Inbound Agent](http://docs.voiceaura.ai/api-reference/inbound/update) remember past conversations they’ve had with callers. There’s a lot of other useful information we can integrate, like how long ago that call occurred and the call’s duration.
    
-    ```Endpoint: POST https://api.malakai.ai/v1/inbound/<<INBOUND NUMBER>>```
+    ```Endpoint: POST https://superadmin.voiceaura.ai/v1/inbound/<<INBOUND NUMBER>>```
 
     ```javascript
     {
-    "prompt": "You're a service agent working on behalf of malakai AI...",
+    "prompt": "You're a service agent working on behalf of voiceaura AI...",
     "dynamic_data": [
         {
             // First, retrieve the previous call's data
-            "url": "https://api.malakai.ai/v1/calls",
+            "url": "https://superadmin.voiceaura.ai/v1/calls",
             "method": "GET",
             "headers": {
                 "authorization": <<YOUR API KEY>>
@@ -57,7 +57,7 @@ Some examples of what Dynamic Data enables:
         {
             // Once we have the previous call's ID, we can retrieve the transcript
             // Note the variable used in the URL
-            "url": "https://api.malakai.ai/v1/calls/{{previous_call_id}}",
+            "url": "https://superadmin.voiceaura.ai/v1/calls/{{previous_call_id}}",
             "method": "GET",
             "headers": {
                 "authorization": <<YOUR API KEY>>
